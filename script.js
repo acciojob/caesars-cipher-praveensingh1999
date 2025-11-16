@@ -36,9 +36,12 @@ function rot13(encodedStr) {
   // Only change code below this line
 	for(let i=0;i<encodedStr.length;i++){
 		if(encodedStr[i]!=undefined){
-			decodedArr.push(lookup[encodedStr[i]]);
+			 decodedArr.push(lookup[encodedStr[i]]);
 		}
-	}
+		else {
+      decodedArr.push(char); // keep symbols/spaces
+    }
+	} 
 
   return decodedArr.join(""); //return decodedArr
 }
