@@ -39,7 +39,7 @@ function rot13(encodedStr) {
 			 decodedArr.push(lookup[encodedStr[i]]);
 		}
 		else {
-      decodedArr.push(char); // keep symbols/spaces
+      decodedArr.push(encodedStr[i]); // keep symbols/spaces
     }
 	} 
 
